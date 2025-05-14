@@ -112,8 +112,11 @@
             <mxRectangle x="46" y="696" width="120" height="60" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
+        <mxCell id="8nxNPM4JtghR5XvehcW0-54" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;" edge="1" parent="VDZzqtf6pBX9vTgafcBY-141" source="VDZzqtf6pBX9vTgafcBY-142" target="VDZzqtf6pBX9vTgafcBY-148">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="VDZzqtf6pBX9vTgafcBY-142" value="&lt;span style=&quot;font-weight: 700;&quot;&gt;check freeze timer&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;font-weight: 700;&quot;&gt;check jump&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-weight: 700;&quot;&gt;check faceRight&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="VDZzqtf6pBX9vTgafcBY-141" vertex="1">
-          <mxGeometry x="23" y="60" width="110" height="50" as="geometry" />
+          <mxGeometry x="21" y="63.5" width="110" height="50" as="geometry" />
         </mxCell>
         <mxCell id="VDZzqtf6pBX9vTgafcBY-148" value="faceRight" style="swimlane;whiteSpace=wrap;html=1;" parent="VDZzqtf6pBX9vTgafcBY-141" vertex="1">
           <mxGeometry x="155" y="33" width="179" height="90" as="geometry" />
