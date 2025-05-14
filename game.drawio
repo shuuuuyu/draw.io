@@ -5,7 +5,7 @@
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="VDZzqtf6pBX9vTgafcBY-35" value="&lt;font style=&quot;font-size: 45px;&quot;&gt;Game.draw();&lt;/font&gt;" style="swimlane;whiteSpace=wrap;html=1;startSize=100;fontSize=20;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
-          <mxGeometry x="840" y="20" width="1723" height="740" as="geometry">
+          <mxGeometry x="840" y="20" width="1723" height="916.5" as="geometry">
             <mxRectangle x="840" y="20" width="200" height="100" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
@@ -39,9 +39,9 @@
         <mxCell id="VDZzqtf6pBX9vTgafcBY-65" value="drawAboutUS();" style="rounded=0;whiteSpace=wrap;html=1;" parent="VDZzqtf6pBX9vTgafcBY-64" vertex="1">
           <mxGeometry x="25" y="60" width="130" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="VDZzqtf6pBX9vTgafcBY-66" value="&lt;span style=&quot;font-weight: 400;&quot;&gt;LEVEL1&lt;/span&gt;" style="swimlane;whiteSpace=wrap;html=1;startSize=30;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="VDZzqtf6pBX9vTgafcBY-35" vertex="1" collapsed="1">
-          <mxGeometry x="302" y="145.5" width="120" height="60" as="geometry">
-            <mxRectangle x="302" y="145.5" width="1194" height="771" as="alternateBounds" />
+        <mxCell id="VDZzqtf6pBX9vTgafcBY-66" value="&lt;span style=&quot;font-weight: 400;&quot;&gt;LEVEL1&lt;/span&gt;" style="swimlane;whiteSpace=wrap;html=1;startSize=30;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="VDZzqtf6pBX9vTgafcBY-35" vertex="1">
+          <mxGeometry x="302" y="145.5" width="1194" height="771" as="geometry">
+            <mxRectangle x="302" y="145.5" width="120" height="60" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
         <mxCell id="VDZzqtf6pBX9vTgafcBY-86" value="doodleJump.draw();" style="swimlane;whiteSpace=wrap;html=1;startSize=23;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="VDZzqtf6pBX9vTgafcBY-66" vertex="1">
