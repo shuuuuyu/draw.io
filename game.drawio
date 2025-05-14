@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0" version="27.0.5">
   <diagram name="第 1 页" id="zvSUY6T6_Y0GB6HIT6o8">
-    <mxGraphModel dx="1687" dy="1168" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="370" dy="556" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -118,7 +118,7 @@
         <mxCell id="VDZzqtf6pBX9vTgafcBY-148" value="faceRight" style="swimlane;whiteSpace=wrap;html=1;" parent="VDZzqtf6pBX9vTgafcBY-141" vertex="1">
           <mxGeometry x="155" y="33" width="179" height="90" as="geometry" />
         </mxCell>
-        <mxCell id="VDZzqtf6pBX9vTgafcBY-149" value="game.doodleJump.fireTimer" style="rounded=0;whiteSpace=wrap;html=1;" parent="VDZzqtf6pBX9vTgafcBY-148" vertex="1">
+        <mxCell id="VDZzqtf6pBX9vTgafcBY-149" value="&lt;div&gt;check&lt;/div&gt;game.doodleJump.fireTimer" style="rounded=0;whiteSpace=wrap;html=1;" parent="VDZzqtf6pBX9vTgafcBY-148" vertex="1">
           <mxGeometry x="7.5" y="29" width="163.5" height="54" as="geometry" />
         </mxCell>
         <mxCell id="8nxNPM4JtghR5XvehcW0-46" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="VDZzqtf6pBX9vTgafcBY-74" source="8nxNPM4JtghR5XvehcW0-45" target="VDZzqtf6pBX9vTgafcBY-141">
