@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0" version="27.0.6">
   <diagram name="第 1 页" id="angXsaN4UIhIyY1k6tkn">
-    <mxGraphModel dx="2665" dy="1085" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2369" dy="964" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -8,7 +8,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="WmIiGHFDctsjecF1RcBK-17" value="&lt;span style=&quot;font-size: 25px;&quot;&gt;初始化&lt;/span&gt;" style="swimlane;whiteSpace=wrap;html=1;startSize=50;" parent="1" vertex="1">
-          <mxGeometry x="80" y="70" width="280" height="200" as="geometry" />
+          <mxGeometry x="80" y="120" width="280" height="200" as="geometry" />
         </mxCell>
         <mxCell id="WmIiGHFDctsjecF1RcBK-18" value="&lt;div style=&quot;line-height: 180%;&quot;&gt;&lt;span style=&quot;font-size: 20px; line-height: 180%;&quot;&gt;連線至網路&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;font-size: 20px; line-height: 180%;&quot;&gt;初始化DHT11與繼電器&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="WmIiGHFDctsjecF1RcBK-17" vertex="1">
           <mxGeometry x="27.5" y="80" width="225" height="100" as="geometry" />
@@ -17,7 +17,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="WmIiGHFDctsjecF1RcBK-19" value="&lt;div style=&quot;line-height: 180%;&quot;&gt;&lt;span style=&quot;font-size: 20px;&quot;&gt;每五秒&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 180%;&quot;&gt;&lt;span style=&quot;font-size: 20px;&quot;&gt;讀取溫度與濕度資料&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="420" y="120" width="225" height="100" as="geometry" />
+          <mxGeometry x="420" y="170" width="225" height="100" as="geometry" />
         </mxCell>
         <mxCell id="WmIiGHFDctsjecF1RcBK-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="WmIiGHFDctsjecF1RcBK-23" target="WmIiGHFDctsjecF1RcBK-25" edge="1">
           <mxGeometry relative="1" as="geometry" />
@@ -36,20 +36,19 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="WmIiGHFDctsjecF1RcBK-23" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;溫度&amp;gt;攝氏27度&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;且濕度&amp;lt;60%&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;且冷卻時間已過&lt;/font&gt;&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="810" y="90" width="300" height="160" as="geometry" />
+          <mxGeometry x="750" y="140" width="300" height="160" as="geometry" />
         </mxCell>
-        <mxCell id="WmIiGHFDctsjecF1RcBK-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="WmIiGHFDctsjecF1RcBK-25" edge="1">
+        <mxCell id="qYW5iU7djlbz6hjke8EB-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="WmIiGHFDctsjecF1RcBK-25" target="qYW5iU7djlbz6hjke8EB-5">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="690" y="180" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="1520" y="170" />
-              <mxPoint x="1520" y="560" />
-              <mxPoint x="690" y="560" />
+              <mxPoint x="1530" y="220" />
+              <mxPoint x="1530" y="821" />
+              <mxPoint x="1230" y="821" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="WmIiGHFDctsjecF1RcBK-25" value="&lt;div style=&quot;line-height: 180%;&quot;&gt;&lt;span style=&quot;font-size: 20px;&quot;&gt;啟動霧化器&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 180%;&quot;&gt;&lt;span style=&quot;font-size: 20px;&quot;&gt;傳送telegram通知&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 180%;&quot;&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;目前溫溼度並提示已啟動噴水&lt;/font&gt;&lt;span style=&quot;font-size: 20px;&quot;&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 180%;&quot;&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;更新冷卻時間&lt;/font&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="1230" y="105" width="270" height="130" as="geometry" />
+          <mxGeometry x="1120" y="155" width="270" height="130" as="geometry" />
         </mxCell>
         <mxCell id="WmIiGHFDctsjecF1RcBK-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="WmIiGHFDctsjecF1RcBK-30" target="WmIiGHFDctsjecF1RcBK-33" edge="1">
           <mxGeometry relative="1" as="geometry" />
@@ -59,30 +58,62 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="WmIiGHFDctsjecF1RcBK-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="WmIiGHFDctsjecF1RcBK-30" edge="1">
+        <mxCell id="qYW5iU7djlbz6hjke8EB-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="WmIiGHFDctsjecF1RcBK-30" target="qYW5iU7djlbz6hjke8EB-5">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="770" y="180" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="900" y="601" />
+              <mxPoint x="1230" y="601" />
+            </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="WmIiGHFDctsjecF1RcBK-37" value="否" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=20;" parent="WmIiGHFDctsjecF1RcBK-36" vertex="1" connectable="0">
-          <mxGeometry x="-0.4662" y="1" relative="1" as="geometry">
-            <mxPoint as="offset" />
+        <mxCell id="qYW5iU7djlbz6hjke8EB-16" value="否" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=20;" vertex="1" connectable="0" parent="qYW5iU7djlbz6hjke8EB-15">
+          <mxGeometry x="-0.8658" y="5" relative="1" as="geometry">
+            <mxPoint x="-4" as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="WmIiGHFDctsjecF1RcBK-30" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;溫度&amp;lt;攝氏18度&lt;/font&gt;" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="810" y="340" width="300" height="160" as="geometry" />
+          <mxGeometry x="750" y="390" width="300" height="160" as="geometry" />
         </mxCell>
-        <mxCell id="WmIiGHFDctsjecF1RcBK-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="WmIiGHFDctsjecF1RcBK-33" edge="1">
+        <mxCell id="qYW5iU7djlbz6hjke8EB-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="WmIiGHFDctsjecF1RcBK-33" target="qYW5iU7djlbz6hjke8EB-5">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="730" y="180" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="1365" y="530" />
-              <mxPoint x="730" y="530" />
+              <mxPoint x="1410" y="470" />
+              <mxPoint x="1410" y="731" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="WmIiGHFDctsjecF1RcBK-33" value="&lt;div style=&quot;line-height: 180%;&quot;&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;傳送 Telegram 通知，提示溫度過低需注意保溫&lt;/font&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="1230" y="355" width="270" height="130" as="geometry" />
+          <mxGeometry x="1120" y="405" width="270" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="qYW5iU7djlbz6hjke8EB-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="qYW5iU7djlbz6hjke8EB-5" target="qYW5iU7djlbz6hjke8EB-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qYW5iU7djlbz6hjke8EB-19" value="是" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=20;" vertex="1" connectable="0" parent="qYW5iU7djlbz6hjke8EB-13">
+          <mxGeometry x="0.0411" y="-1" relative="1" as="geometry">
+            <mxPoint y="2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qYW5iU7djlbz6hjke8EB-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="qYW5iU7djlbz6hjke8EB-5" target="WmIiGHFDctsjecF1RcBK-19">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1080" y="631" />
+              <mxPoint x="533" y="631" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qYW5iU7djlbz6hjke8EB-20" value="否" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=20;" vertex="1" connectable="0" parent="qYW5iU7djlbz6hjke8EB-18">
+          <mxGeometry x="-0.4814" y="-1" relative="1" as="geometry">
+            <mxPoint x="-4" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qYW5iU7djlbz6hjke8EB-5" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;telegram message:&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;/start&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;/溫溼度&lt;/font&gt;&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="930" y="651" width="300" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="qYW5iU7djlbz6hjke8EB-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.25;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="qYW5iU7djlbz6hjke8EB-9" target="WmIiGHFDctsjecF1RcBK-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qYW5iU7djlbz6hjke8EB-9" value="&lt;div style=&quot;line-height: 180%;&quot;&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;傳送telegram&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 180%;&quot;&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;目前溫溼度數值&lt;/font&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="520" y="666" width="270" height="130" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
