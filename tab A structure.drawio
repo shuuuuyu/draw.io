@@ -1,55 +1,55 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0" version="27.1.6">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0" version="29.0.3">
   <diagram name="第 1 页" id="5HFlXLEexiiOmaJ-B0UK">
-    <mxGraphModel dx="1363" dy="620" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="857" dy="434" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="G3JKYeJhd6huEgpkMzuO-18" value="" style="group;fontSize=18;" vertex="1" connectable="0" parent="1">
+        <mxCell id="G3JKYeJhd6huEgpkMzuO-18" value="" style="group;fontSize=18;" parent="1" vertex="1" connectable="0">
           <mxGeometry x="40" y="190" width="1010" height="430" as="geometry" />
         </mxCell>
-        <mxCell id="G3JKYeJhd6huEgpkMzuO-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=18;" edge="1" parent="G3JKYeJhd6huEgpkMzuO-18" source="G3JKYeJhd6huEgpkMzuO-3" target="G3JKYeJhd6huEgpkMzuO-4">
+        <mxCell id="G3JKYeJhd6huEgpkMzuO-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=18;" parent="G3JKYeJhd6huEgpkMzuO-18" source="G3JKYeJhd6huEgpkMzuO-3" target="G3JKYeJhd6huEgpkMzuO-4" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="G3JKYeJhd6huEgpkMzuO-3" value="步驟 1：選擇洲別&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;div&gt;&lt;div&gt;&amp;nbsp;&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;font style=&quot;&quot;&gt;選項：亞洲、&lt;/font&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;歐洲、美洲等&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;" vertex="1" parent="G3JKYeJhd6huEgpkMzuO-18">
+        <mxCell id="G3JKYeJhd6huEgpkMzuO-3" value="步驟 1：選擇洲別&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;div&gt;&lt;div&gt;&amp;nbsp;&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;font style=&quot;&quot;&gt;選項：亞洲、&lt;/font&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;歐洲、美洲等&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;" parent="G3JKYeJhd6huEgpkMzuO-18" vertex="1">
           <mxGeometry width="202" height="117.27272727272728" as="geometry" />
         </mxCell>
-        <mxCell id="G3JKYeJhd6huEgpkMzuO-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=18;" edge="1" parent="G3JKYeJhd6huEgpkMzuO-18" source="G3JKYeJhd6huEgpkMzuO-4" target="G3JKYeJhd6huEgpkMzuO-6">
+        <mxCell id="G3JKYeJhd6huEgpkMzuO-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=18;" parent="G3JKYeJhd6huEgpkMzuO-18" source="G3JKYeJhd6huEgpkMzuO-4" target="G3JKYeJhd6huEgpkMzuO-6" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="G3JKYeJhd6huEgpkMzuO-4" value="步驟 2：自動載入對應國家清單&lt;div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;選項：國家&lt;/font&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=0;fontSize=18;" vertex="1" parent="G3JKYeJhd6huEgpkMzuO-18">
+        <mxCell id="G3JKYeJhd6huEgpkMzuO-4" value="步驟 2：自動載入對應國家清單&lt;div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;選項：國家&lt;/font&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=0;fontSize=18;" parent="G3JKYeJhd6huEgpkMzuO-18" vertex="1">
           <mxGeometry x="269.3333333333333" width="202" height="117.27272727272728" as="geometry" />
         </mxCell>
-        <mxCell id="G3JKYeJhd6huEgpkMzuO-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=18;" edge="1" parent="G3JKYeJhd6huEgpkMzuO-18" source="G3JKYeJhd6huEgpkMzuO-6" target="G3JKYeJhd6huEgpkMzuO-8">
+        <mxCell id="G3JKYeJhd6huEgpkMzuO-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=18;" parent="G3JKYeJhd6huEgpkMzuO-18" source="G3JKYeJhd6huEgpkMzuO-6" target="G3JKYeJhd6huEgpkMzuO-8" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="G3JKYeJhd6huEgpkMzuO-6" value="步驟 3：自動載入對應城市清單&lt;div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;選項：城市&lt;/font&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=0;fontSize=18;" vertex="1" parent="G3JKYeJhd6huEgpkMzuO-18">
+        <mxCell id="G3JKYeJhd6huEgpkMzuO-6" value="步驟 3：自動載入對應城市清單&lt;div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;選項：城市&lt;/font&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=0;fontSize=18;" parent="G3JKYeJhd6huEgpkMzuO-18" vertex="1">
           <mxGeometry x="538.6666666666666" width="202" height="117.27272727272728" as="geometry" />
         </mxCell>
-        <mxCell id="G3JKYeJhd6huEgpkMzuO-11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=18;" edge="1" parent="G3JKYeJhd6huEgpkMzuO-18" source="G3JKYeJhd6huEgpkMzuO-8" target="G3JKYeJhd6huEgpkMzuO-10">
+        <mxCell id="G3JKYeJhd6huEgpkMzuO-11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=18;" parent="G3JKYeJhd6huEgpkMzuO-18" source="G3JKYeJhd6huEgpkMzuO-8" target="G3JKYeJhd6huEgpkMzuO-10" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="G3JKYeJhd6huEgpkMzuO-8" value="步驟 4：輸入旅遊資訊&lt;div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;預算（Number Input）&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;日期區間（Number Input）&lt;/font&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;旅遊偏好（Check box）&lt;/font&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=0;fontSize=18;" vertex="1" parent="G3JKYeJhd6huEgpkMzuO-18">
+        <mxCell id="G3JKYeJhd6huEgpkMzuO-8" value="步驟 4：輸入旅遊資訊&lt;div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;預算（Number Input）&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;日期區間（Number Input）&lt;/font&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;旅遊偏好（Check box）&lt;/font&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=0;fontSize=18;" parent="G3JKYeJhd6huEgpkMzuO-18" vertex="1">
           <mxGeometry x="808" width="202" height="117.27272727272728" as="geometry" />
         </mxCell>
-        <mxCell id="G3JKYeJhd6huEgpkMzuO-13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=18;" edge="1" parent="G3JKYeJhd6huEgpkMzuO-18" source="G3JKYeJhd6huEgpkMzuO-10" target="G3JKYeJhd6huEgpkMzuO-12">
+        <mxCell id="G3JKYeJhd6huEgpkMzuO-13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=18;" parent="G3JKYeJhd6huEgpkMzuO-18" source="G3JKYeJhd6huEgpkMzuO-10" target="G3JKYeJhd6huEgpkMzuO-12" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="G3JKYeJhd6huEgpkMzuO-10" value="步驟 5：點擊&lt;div&gt;「開始規劃」按鈕&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=0;fontSize=18;" vertex="1" parent="G3JKYeJhd6huEgpkMzuO-18">
+        <mxCell id="G3JKYeJhd6huEgpkMzuO-10" value="步驟 5：點擊&lt;div&gt;「開始規劃」按鈕&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=0;fontSize=18;" parent="G3JKYeJhd6huEgpkMzuO-18" vertex="1">
           <mxGeometry x="808" y="273.6363636363636" width="202" height="117.27272727272728" as="geometry" />
         </mxCell>
-        <mxCell id="G3JKYeJhd6huEgpkMzuO-15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=18;" edge="1" parent="G3JKYeJhd6huEgpkMzuO-18" source="G3JKYeJhd6huEgpkMzuO-12" target="G3JKYeJhd6huEgpkMzuO-14">
+        <mxCell id="G3JKYeJhd6huEgpkMzuO-15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=18;" parent="G3JKYeJhd6huEgpkMzuO-18" source="G3JKYeJhd6huEgpkMzuO-12" target="G3JKYeJhd6huEgpkMzuO-14" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="G3JKYeJhd6huEgpkMzuO-12" value="&lt;ul&gt;&lt;li data-end=&quot;728&quot; data-start=&quot;704&quot;&gt;&lt;p data-end=&quot;728&quot; data-start=&quot;706&quot;&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;天氣 API：抓到出發期間的天氣&lt;/font&gt;&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;呼叫 Gemini API&lt;/font&gt;&lt;/li&gt;&lt;ul&gt;&lt;li&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;組合 Prompt（城市+預算+日期+偏好+天氣）&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;發送請求至 Gemini&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;接收生成的旅遊建議&lt;/font&gt;&lt;/li&gt;&lt;/ul&gt;&lt;li data-end=&quot;728&quot; data-start=&quot;704&quot;&gt;&lt;p data-end=&quot;728&quot; data-start=&quot;706&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); font-size: 14px;&quot;&gt;匯率 API：抓到當下匯率&lt;/span&gt;&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;" style="whiteSpace=wrap;html=1;rounded=0;fontSize=18;align=left;spacing=2;spacingLeft=-20;spacingRight=-12;" vertex="1" parent="G3JKYeJhd6huEgpkMzuO-18">
+        <mxCell id="G3JKYeJhd6huEgpkMzuO-12" value="&lt;ul&gt;&lt;li data-end=&quot;728&quot; data-start=&quot;704&quot;&gt;&lt;p data-end=&quot;728&quot; data-start=&quot;706&quot;&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;天氣 API：抓到出發期間的天氣&lt;/font&gt;&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;呼叫 Gemini API&lt;/font&gt;&lt;/li&gt;&lt;ul&gt;&lt;li&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;組合 Prompt（城市+預算+日期+偏好+天氣）&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;發送請求至 Gemini&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;接收生成的旅遊建議&lt;/font&gt;&lt;/li&gt;&lt;/ul&gt;&lt;li data-end=&quot;728&quot; data-start=&quot;704&quot;&gt;&lt;p data-end=&quot;728&quot; data-start=&quot;706&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); font-size: 14px;&quot;&gt;匯率 API：抓到當下匯率&lt;/span&gt;&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;" style="whiteSpace=wrap;html=1;rounded=0;fontSize=18;align=left;spacing=2;spacingLeft=-20;spacingRight=-12;" parent="G3JKYeJhd6huEgpkMzuO-18" vertex="1">
           <mxGeometry x="520" y="234.55" width="220" height="195.45" as="geometry" />
         </mxCell>
-        <mxCell id="G3JKYeJhd6huEgpkMzuO-17" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=18;" edge="1" parent="G3JKYeJhd6huEgpkMzuO-18" source="G3JKYeJhd6huEgpkMzuO-14" target="G3JKYeJhd6huEgpkMzuO-16">
+        <mxCell id="G3JKYeJhd6huEgpkMzuO-17" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=18;" parent="G3JKYeJhd6huEgpkMzuO-18" source="G3JKYeJhd6huEgpkMzuO-14" target="G3JKYeJhd6huEgpkMzuO-16" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="G3JKYeJhd6huEgpkMzuO-14" value="步驟 6：顯示旅遊規劃結果&lt;div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;在 Gradio Textbox 顯示&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); font-size: 14px;&quot;&gt;景點推薦、&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); font-size: 14px;&quot;&gt;天氣敘述、&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); font-size: 14px;&quot;&gt;交通方式、&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); font-size: 14px;&quot;&gt;行李建議、&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); font-size: 14px;&quot;&gt;匯率&lt;/span&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=0;fontSize=18;" vertex="1" parent="G3JKYeJhd6huEgpkMzuO-18">
+        <mxCell id="G3JKYeJhd6huEgpkMzuO-14" value="步驟 6：顯示旅遊規劃結果&lt;div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;在 Gradio Textbox 顯示&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); font-size: 14px;&quot;&gt;景點推薦、&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); font-size: 14px;&quot;&gt;天氣敘述、&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); font-size: 14px;&quot;&gt;交通方式、&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); font-size: 14px;&quot;&gt;行李建議、&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); font-size: 14px;&quot;&gt;匯率&lt;/span&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=0;fontSize=18;" parent="G3JKYeJhd6huEgpkMzuO-18" vertex="1">
           <mxGeometry x="269.3333333333333" y="273.6363636363636" width="202" height="117.27272727272728" as="geometry" />
         </mxCell>
-        <mxCell id="G3JKYeJhd6huEgpkMzuO-16" value="步驟 7：可點擊&lt;div&gt;「下載 PDF」按鈕&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=0;fontSize=18;" vertex="1" parent="G3JKYeJhd6huEgpkMzuO-18">
+        <mxCell id="G3JKYeJhd6huEgpkMzuO-16" value="步驟 7：可點擊&lt;div&gt;「下載 PDF」按鈕&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=0;fontSize=18;" parent="G3JKYeJhd6huEgpkMzuO-18" vertex="1">
           <mxGeometry y="273.6363636363636" width="202" height="117.27272727272728" as="geometry" />
         </mxCell>
       </root>
