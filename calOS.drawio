@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0" version="29.1.0">
   <diagram name="第 1 页" id="eLkTEngSVBReIEEqW_Fp">
-    <mxGraphModel dx="1318" dy="631" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1071" dy="513" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -27,8 +27,18 @@
         <mxCell id="g2n9dxNHA4onvls1k4q6-15" edge="1" parent="1" source="g2n9dxNHA4onvls1k4q6-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="g2n9dxNHA4onvls1k4q6-4">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
+        <mxCell id="G4CmwNHNhOZGilFhE5XJ-2" connectable="0" parent="g2n9dxNHA4onvls1k4q6-15" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="無效" vertex="1">
+          <mxGeometry relative="1" x="-0.6061" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="g2n9dxNHA4onvls1k4q6-16" edge="1" parent="1" source="g2n9dxNHA4onvls1k4q6-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="g2n9dxNHA4onvls1k4q6-7">
           <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="G4CmwNHNhOZGilFhE5XJ-1" connectable="0" parent="g2n9dxNHA4onvls1k4q6-16" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="有效" vertex="1">
+          <mxGeometry relative="1" x="-0.0808" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="g2n9dxNHA4onvls1k4q6-6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;呼叫 &lt;span class=&quot;token&quot; style=&quot;color: rgb(64, 120, 242);&quot;&gt;validateAndClean&lt;/span&gt;&lt;span class=&quot;token&quot; style=&quot;color: rgb(56, 58, 66);&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token&quot; style=&quot;color: rgb(56, 58, 66);&quot;&gt;)&lt;/span&gt;&amp;nbsp;&lt;/font&gt;&lt;div&gt;&lt;font size=&quot;3&quot;&gt;驗證有效性&lt;/font&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="96.31578947368422" width="200" x="360" y="401.04894736842107" as="geometry" />
@@ -45,6 +55,11 @@
             </Array>
           </mxGeometry>
         </mxCell>
+        <mxCell id="G4CmwNHNhOZGilFhE5XJ-3" connectable="0" parent="g2n9dxNHA4onvls1k4q6-20" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="失敗" vertex="1">
+          <mxGeometry relative="1" x="-0.6621" y="-2" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="g2n9dxNHA4onvls1k4q6-21" edge="1" parent="1" source="g2n9dxNHA4onvls1k4q6-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=0;exitDx=0;exitDy=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;" target="g2n9dxNHA4onvls1k4q6-10">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
@@ -53,6 +68,11 @@
               <mxPoint x="870" y="60" />
               <mxPoint x="510" y="60" />
             </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="G4CmwNHNhOZGilFhE5XJ-4" connectable="0" parent="g2n9dxNHA4onvls1k4q6-21" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="結束" vertex="1">
+          <mxGeometry relative="1" x="-0.8227" as="geometry">
+            <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="g2n9dxNHA4onvls1k4q6-7" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;呼叫 &lt;span class=&quot;token&quot; style=&quot;color: rgb(64, 120, 242);&quot;&gt;parseInput&lt;/span&gt;&lt;span class=&quot;token&quot; style=&quot;color: rgb(56, 58, 66);&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token&quot; style=&quot;color: rgb(56, 58, 66);&quot;&gt;)&lt;/span&gt;&amp;nbsp;&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;拆解成三項&lt;/font&gt;&lt;/div&gt;" vertex="1">
@@ -67,6 +87,11 @@
         <mxCell id="g2n9dxNHA4onvls1k4q6-19" edge="1" parent="1" source="g2n9dxNHA4onvls1k4q6-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="g2n9dxNHA4onvls1k4q6-10">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
+        <mxCell id="G4CmwNHNhOZGilFhE5XJ-6" connectable="0" parent="g2n9dxNHA4onvls1k4q6-19" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="結束" vertex="1">
+          <mxGeometry relative="1" x="-0.0307" y="-1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="g2n9dxNHA4onvls1k4q6-22" edge="1" parent="1" source="g2n9dxNHA4onvls1k4q6-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.75;exitDx=0;exitDy=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;" target="g2n9dxNHA4onvls1k4q6-4">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
@@ -74,6 +99,11 @@
               <mxPoint x="600" y="200" />
               <mxPoint x="230" y="200" />
             </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="G4CmwNHNhOZGilFhE5XJ-5" connectable="0" parent="g2n9dxNHA4onvls1k4q6-22" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="重複" vertex="1">
+          <mxGeometry relative="1" x="-0.7188" y="-1" as="geometry">
+            <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="g2n9dxNHA4onvls1k4q6-9" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;span class=&quot;token&quot; style=&quot;color: rgb(166, 38, 164);&quot;&gt;switch&lt;/span&gt; &lt;span class=&quot;token&quot; style=&quot;color: rgb(166, 38, 164);&quot;&gt;case&lt;/span&gt;&amp;nbsp;&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;決定執行哪個函式&lt;/font&gt;&lt;/div&gt;" vertex="1">
