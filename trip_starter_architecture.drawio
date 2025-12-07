@@ -1,0 +1,219 @@
+<mxfile host="app.diagrams.net" modified="2024-12-07T00:00:00.000Z" agent="Claude" version="22.0.0" etag="trip-starter-v1" type="device">
+  <diagram id="trip-starter-architecture" name="Trip Starter 系統架構">
+    <mxGraphModel dx="1422" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="1000" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        
+        <!-- Title -->
+        <mxCell id="title" value="Trip Starter 系統架構圖" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=28;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="400" y="10" width="600" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- Layer 1: User -->
+        <mxCell id="layer1-label" value="使用者層" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="40" y="60" width="120" height="30" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="user" value="&lt;b&gt;👤 使用者&lt;/b&gt;&lt;br&gt;&lt;br&gt;輸入旅遊需求、上傳檔案&lt;br&gt;查看行程、下載 PDF、瀏覽地圖" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1f5fe;strokeColor=#01579b;fontSize=12;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="500" y="60" width="400" height="80" as="geometry" />
+        </mxCell>
+        
+        <!-- Arrow: User to UI -->
+        <mxCell id="arrow-user-ui" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=2;" edge="1" parent="1" source="user" target="gradio-container">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- Layer 2: Frontend UI -->
+        <mxCell id="layer2-label" value="前端介面層" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="40" y="190" width="120" height="30" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="gradio-container" value="&lt;b&gt;🖥️ Gradio Web Interface&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f3e5f5;strokeColor=#4a148c;fontSize=14;align=center;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="350" y="180" width="700" height="200" as="geometry" />
+        </mxCell>
+        
+        <!-- Tab 1 -->
+        <mxCell id="tab1" value="&lt;b&gt;📋 Tab 1&lt;/b&gt;&lt;br&gt;旅遊人格測驗&lt;br&gt;&lt;br&gt;• MBTI 問卷&lt;br&gt;• 人格分析&lt;br&gt;• 旅遊建議" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;fontSize=11;align=center;" vertex="1" parent="1">
+          <mxGeometry x="370" y="220" width="150" height="140" as="geometry" />
+        </mxCell>
+        
+        <!-- Tab 2 -->
+        <mxCell id="tab2" value="&lt;b&gt;✨ Tab 2&lt;/b&gt;&lt;br&gt;自動生成行程&lt;br&gt;&lt;br&gt;• 目的地輸入&lt;br&gt;• 日期/預算&lt;br&gt;• 興趣選擇" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;fontSize=11;align=center;" vertex="1" parent="1">
+          <mxGeometry x="540" y="220" width="150" height="140" as="geometry" />
+        </mxCell>
+        
+        <!-- Tab 3 -->
+        <mxCell id="tab3" value="&lt;b&gt;🔧 Tab 3&lt;/b&gt;&lt;br&gt;行程優化器&lt;br&gt;&lt;br&gt;• 檔案上傳&lt;br&gt;• 節奏調整&lt;br&gt;• 風格選擇" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;fontSize=11;align=center;" vertex="1" parent="1">
+          <mxGeometry x="710" y="220" width="150" height="140" as="geometry" />
+        </mxCell>
+        
+        <!-- Tab 4 -->
+        <mxCell id="tab4" value="&lt;b&gt;📍 Tab 4&lt;/b&gt;&lt;br&gt;地點推薦器&lt;br&gt;&lt;br&gt;• 地點搜尋&lt;br&gt;• 半徑設定&lt;br&gt;• 類型篩選" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;fontSize=11;align=center;" vertex="1" parent="1">
+          <mxGeometry x="880" y="220" width="150" height="140" as="geometry" />
+        </mxCell>
+        
+        <!-- Layer 3: Core Logic -->
+        <mxCell id="layer3-label" value="核心邏輯層" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="40" y="440" width="120" height="30" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="core-container" value="&lt;b&gt;🧠 Python 核心處理模組&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff3e0;strokeColor=#e65100;fontSize=14;align=center;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="100" y="430" width="1200" height="180" as="geometry" />
+        </mxCell>
+        
+        <!-- Module 1 -->
+        <mxCell id="module1" value="&lt;b&gt;generate_itinerary()&lt;/b&gt;&lt;br&gt;&lt;br&gt;• 整合天氣 API&lt;br&gt;• 整合匯率 API&lt;br&gt;• 呼叫 Gemini AI&lt;br&gt;• 生成 PDF" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;fontSize=11;align=center;" vertex="1" parent="1">
+          <mxGeometry x="130" y="470" width="240" height="120" as="geometry" />
+        </mxCell>
+        
+        <!-- Module 2 -->
+        <mxCell id="module2" value="&lt;b&gt;optimize_itinerary()&lt;/b&gt;&lt;br&gt;&lt;br&gt;• 讀取上傳檔案&lt;br&gt;• 解析行程內容&lt;br&gt;• AI 優化建議&lt;br&gt;• 生成 PDF" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;fontSize=11;align=center;" vertex="1" parent="1">
+          <mxGeometry x="400" y="470" width="240" height="120" as="geometry" />
+        </mxCell>
+        
+        <!-- Module 3 -->
+        <mxCell id="module3" value="&lt;b&gt;recommend_places()&lt;/b&gt;&lt;br&gt;&lt;br&gt;• 呼叫 SerpAPI&lt;br&gt;• 解析地點資料&lt;br&gt;• AI 分析推薦&lt;br&gt;• 生成互動地圖" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;fontSize=11;align=center;" vertex="1" parent="1">
+          <mxGeometry x="670" y="470" width="240" height="120" as="geometry" />
+        </mxCell>
+        
+        <!-- Module 4 -->
+        <mxCell id="module4" value="&lt;b&gt;create_pdf_with_cn()&lt;/b&gt;&lt;br&gt;&lt;br&gt;• WeasyPrint 處理&lt;br&gt;• 中文字體支援&lt;br&gt;• HTML → PDF&lt;br&gt;• 排版優化" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;fontSize=11;align=center;" vertex="1" parent="1">
+          <mxGeometry x="940" y="470" width="240" height="120" as="geometry" />
+        </mxCell>
+        
+        <!-- Arrows: Tabs to Modules -->
+        <mxCell id="arrow-tab1-module1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=2;" edge="1" parent="1" source="tab1" target="module1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="arrow-tab2-module1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=2;" edge="1" parent="1" source="tab2" target="module1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="arrow-tab3-module2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=2;" edge="1" parent="1" source="tab3" target="module2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="arrow-tab4-module3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=2;" edge="1" parent="1" source="tab4" target="module3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- Layer 4: External APIs -->
+        <mxCell id="layer4-label" value="外部 API 層" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="40" y="670" width="120" height="30" as="geometry" />
+        </mxCell>
+        
+        <!-- Weather API -->
+        <mxCell id="api1" value="&lt;b&gt;🌤️ Weather API&lt;/b&gt;&lt;br&gt;Visual Crossing&lt;br&gt;&lt;br&gt;• 15天天氣預報&lt;br&gt;• 70年歷史資料&lt;br&gt;&lt;br&gt;配額: 1000次/天" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e8f8f5;strokeColor=#00695c;fontSize=11;align=center;" vertex="1" parent="1">
+          <mxGeometry x="130" y="660" width="220" height="110" as="geometry" />
+        </mxCell>
+        
+        <!-- Exchange API -->
+        <mxCell id="api2" value="&lt;b&gt;💱 Exchange API&lt;/b&gt;&lt;br&gt;ExchangeRate-API&lt;br&gt;&lt;br&gt;• 160+ 貨幣&lt;br&gt;• 即時匯率&lt;br&gt;&lt;br&gt;配額: 1500次/月" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e8f8f5;strokeColor=#00695c;fontSize=11;align=center;" vertex="1" parent="1">
+          <mxGeometry x="380" y="660" width="220" height="110" as="geometry" />
+        </mxCell>
+        
+        <!-- Gemini AI -->
+        <mxCell id="api3" value="&lt;b&gt;🤖 Gemini AI&lt;/b&gt;&lt;br&gt;Google Gemini&lt;br&gt;&lt;br&gt;• 行程生成&lt;br&gt;• 內容優化&lt;br&gt;&lt;br&gt;配額: 1500次/天" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e8f8f5;strokeColor=#00695c;fontSize=11;align=center;" vertex="1" parent="1">
+          <mxGeometry x="630" y="660" width="220" height="110" as="geometry" />
+        </mxCell>
+        
+        <!-- SerpAPI -->
+        <mxCell id="api4" value="&lt;b&gt;🔍 SerpAPI&lt;/b&gt;&lt;br&gt;Google Maps Search&lt;br&gt;&lt;br&gt;• 地點搜尋&lt;br&gt;• 評分資訊&lt;br&gt;&lt;br&gt;配額: 100次/月" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e8f8f5;strokeColor=#00695c;fontSize=11;align=center;" vertex="1" parent="1">
+          <mxGeometry x="880" y="660" width="220" height="110" as="geometry" />
+        </mxCell>
+        
+        <!-- Arrows: Modules to APIs (dashed) -->
+        <mxCell id="arrow-module1-api1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=2;dashed=1;strokeColor=#00695c;" edge="1" parent="1" source="module1" target="api1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="arrow-module1-api2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=2;dashed=1;strokeColor=#00695c;" edge="1" parent="1" source="module1" target="api2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="arrow-module1-api3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=2;dashed=1;strokeColor=#00695c;" edge="1" parent="1" source="module1" target="api3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="arrow-module2-api3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=2;dashed=1;strokeColor=#00695c;" edge="1" parent="1" source="module2" target="api3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="arrow-module3-api3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=2;dashed=1;strokeColor=#00695c;" edge="1" parent="1" source="module3" target="api3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="arrow-module3-api4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=2;dashed=1;strokeColor=#00695c;" edge="1" parent="1" source="module3" target="api4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- Layer 5: Output -->
+        <mxCell id="layer5-label" value="輸出層" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="40" y="840" width="120" height="30" as="geometry" />
+        </mxCell>
+        
+        <!-- PDF Output -->
+        <mxCell id="output1" value="&lt;b&gt;📄 PDF 文件&lt;/b&gt;&lt;br&gt;&lt;br&gt;• 完整行程表&lt;br&gt;• 中文字體支援&lt;br&gt;• 可下載保存" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffebee;strokeColor=#c62828;fontSize=11;align=center;" vertex="1" parent="1">
+          <mxGeometry x="300" y="830" width="220" height="90" as="geometry" />
+        </mxCell>
+        
+        <!-- Table Output -->
+        <mxCell id="output2" value="&lt;b&gt;📊 資料表格&lt;/b&gt;&lt;br&gt;&lt;br&gt;• 地點清單&lt;br&gt;• 評分排序&lt;br&gt;• 距離資訊" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffebee;strokeColor=#c62828;fontSize=11;align=center;" vertex="1" parent="1">
+          <mxGeometry x="550" y="830" width="220" height="90" as="geometry" />
+        </mxCell>
+        
+        <!-- Map Output -->
+        <mxCell id="output3" value="&lt;b&gt;🗺️ 互動地圖&lt;/b&gt;&lt;br&gt;&lt;br&gt;• Folium 地圖&lt;br&gt;• 標記前三名&lt;br&gt;• 可縮放瀏覽" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffebee;strokeColor=#c62828;fontSize=11;align=center;" vertex="1" parent="1">
+          <mxGeometry x="800" y="830" width="220" height="90" as="geometry" />
+        </mxCell>
+        
+        <!-- Arrows: APIs to Outputs -->
+        <mxCell id="arrow-api-output1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=2;" edge="1" parent="1" source="api2" target="output1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="arrow-api-output2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=2;" edge="1" parent="1" source="api3" target="output2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="arrow-api-output3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=2;" edge="1" parent="1" source="api4" target="output3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- Legend -->
+        <mxCell id="legend-box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="1150" y="830" width="200" height="90" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="legend-title" value="&lt;b&gt;圖例&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="1150" y="835" width="200" height="25" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="legend-arrow1" value="" style="endArrow=classic;html=1;rounded=0;strokeWidth=2;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1165" y="870" as="sourcePoint" />
+            <mxPoint x="1195" y="870" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <mxCell id="legend-text1" value="資料流向" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="1205" y="860" width="100" height="20" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="legend-arrow2" value="" style="endArrow=classic;html=1;rounded=0;strokeWidth=2;dashed=1;strokeColor=#00695c;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1165" y="895" as="sourcePoint" />
+            <mxPoint x="1195" y="895" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <mxCell id="legend-text2" value="API 呼叫" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="1205" y="885" width="100" height="20" as="geometry" />
+        </mxCell>
+        
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
