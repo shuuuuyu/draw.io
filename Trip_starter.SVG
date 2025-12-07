@@ -1,189 +1,464 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 1000">
-  <defs>
-    <style>
-      .title { font: bold 28px sans-serif; fill: #1a1a1a; }
-      .subtitle { font: bold 18px sans-serif; fill: #2c3e50; }
-      .text { font: 14px sans-serif; fill: #34495e; }
-      .small-text { font: 12px sans-serif; fill: #7f8c8d; }
-      .box { fill: #ffffff; stroke: #2c3e50; stroke-width: 2; rx: 8; }
-      .user-box { fill: #e8f4f8; stroke: #3498db; stroke-width: 2; rx: 8; }
-      .ui-box { fill: #f0e6ff; stroke: #9b59b6; stroke-width: 2; rx: 8; }
-      .core-box { fill: #fff3e0; stroke: #f39c12; stroke-width: 2; rx: 8; }
-      .api-box { fill: #e8f8f5; stroke: #16a085; stroke-width: 2; rx: 8; }
-      .output-box { fill: #fdeaea; stroke: #e74c3c; stroke-width: 2; rx: 8; }
-      .arrow { fill: none; stroke: #34495e; stroke-width: 2; marker-end: url(#arrowhead); }
-      .data-arrow { fill: none; stroke: #16a085; stroke-width: 2; stroke-dasharray: 5,5; marker-end: url(#arrowhead-data); }
-    </style>
-    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
-      <polygon points="0 0, 10 3, 0 6" fill="#34495e" />
-    </marker>
-    <marker id="arrowhead-data" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
-      <polygon points="0 0, 10 3, 0 6" fill="#16a085" />
-    </marker>
-  </defs>
+<?xml version="1.0" encoding="UTF-8"?>
+<system_architecture>
+  <project>
+    <name>Trip Starter</name>
+    <description>智慧旅遊規劃應用系統</description>
+    <version>1.0</version>
+  </project>
 
-  <!-- Title -->
-  <text x="700" y="35" text-anchor="middle" class="title">Trip Starter 系統架構圖</text>
-  
-  <!-- Layer 1: User -->
-  <text x="50" y="75" class="subtitle">使用者層</text>
-  <rect x="500" y="60" width="400" height="80" class="user-box"/>
-  <text x="700" y="90" text-anchor="middle" class="text" font-weight="bold">👤 使用者</text>
-  <text x="700" y="110" text-anchor="middle" class="small-text">輸入旅遊需求、上傳檔案</text>
-  <text x="700" y="128" text-anchor="middle" class="small-text">查看行程、下載 PDF、瀏覽地圖</text>
+  <!-- Layer 1: User Layer -->
+  <layer id="1" name="使用者層">
+    <component id="user" type="user">
+      <name>使用者</name>
+      <icon>👤</icon>
+      <inputs>
+        <input>旅遊需求輸入</input>
+        <input>檔案上傳</input>
+        <input>參數設定</input>
+      </inputs>
+      <outputs>
+        <output>查看行程結果</output>
+        <output>下載 PDF 文件</output>
+        <output>瀏覽互動地圖</output>
+      </outputs>
+    </component>
+  </layer>
 
-  <!-- Arrow from User to UI -->
-  <path d="M 700 140 L 700 180" class="arrow"/>
+  <!-- Layer 2: Frontend UI Layer -->
+  <layer id="2" name="前端介面層">
+    <component id="gradio_interface" type="web_interface">
+      <name>Gradio Web Interface</name>
+      <icon>🖥️</icon>
+      <technology>Gradio</technology>
+      
+      <tabs>
+        <tab id="tab1">
+          <name>旅遊人格測驗</name>
+          <icon>📋</icon>
+          <features>
+            <feature>MBTI 問卷</feature>
+            <feature>人格分析</feature>
+            <feature>旅遊建議</feature>
+          </features>
+        </tab>
+        
+        <tab id="tab2">
+          <name>自動生成行程</name>
+          <icon>✨</icon>
+          <features>
+            <feature>目的地輸入</feature>
+            <feature>日期/預算設定</feature>
+            <feature>興趣選擇</feature>
+          </features>
+        </tab>
+        
+        <tab id="tab3">
+          <name>行程優化器</name>
+          <icon>🔧</icon>
+          <features>
+            <feature>檔案上傳</feature>
+            <feature>節奏調整</feature>
+            <feature>風格選擇</feature>
+          </features>
+        </tab>
+        
+        <tab id="tab4">
+          <name>地點推薦器</name>
+          <icon>📍</icon>
+          <features>
+            <feature>地點搜尋</feature>
+            <feature>半徑設定</feature>
+            <feature>類型篩選</feature>
+          </features>
+        </tab>
+      </tabs>
+    </component>
+  </layer>
 
-  <!-- Layer 2: Frontend UI -->
-  <text x="50" y="215" class="subtitle">前端介面層</text>
-  
-  <!-- Gradio UI Main Box -->
-  <rect x="350" y="190" width="700" height="200" class="ui-box"/>
-  <text x="700" y="215" text-anchor="middle" class="text" font-weight="bold">🖥️ Gradio Web Interface</text>
-  
-  <!-- Four Tabs -->
-  <rect x="370" y="230" width="150" height="140" class="box"/>
-  <text x="445" y="255" text-anchor="middle" class="text" font-weight="bold">📋 Tab 1</text>
-  <text x="445" y="275" text-anchor="middle" class="small-text">旅遊人格</text>
-  <text x="445" y="292" text-anchor="middle" class="small-text">測驗</text>
-  <text x="445" y="315" text-anchor="middle" class="small-text">• MBTI 問卷</text>
-  <text x="445" y="332" text-anchor="middle" class="small-text">• 人格分析</text>
-  <text x="445" y="349" text-anchor="middle" class="small-text">• 旅遊建議</text>
-  
-  <rect x="540" y="230" width="150" height="140" class="box"/>
-  <text x="615" y="255" text-anchor="middle" class="text" font-weight="bold">✨ Tab 2</text>
-  <text x="615" y="275" text-anchor="middle" class="small-text">自動生成</text>
-  <text x="615" y="292" text-anchor="middle" class="small-text">行程</text>
-  <text x="615" y="315" text-anchor="middle" class="small-text">• 目的地輸入</text>
-  <text x="615" y="332" text-anchor="middle" class="small-text">• 日期/預算</text>
-  <text x="615" y="349" text-anchor="middle" class="small-text">• 興趣選擇</text>
-  
-  <rect x="710" y="230" width="150" height="140" class="box"/>
-  <text x="785" y="255" text-anchor="middle" class="text" font-weight="bold">🔧 Tab 3</text>
-  <text x="785" y="275" text-anchor="middle" class="small-text">行程優化</text>
-  <text x="785" y="292" text-anchor="middle" class="small-text">器</text>
-  <text x="785" y="315" text-anchor="middle" class="small-text">• 檔案上傳</text>
-  <text x="785" y="332" text-anchor="middle" class="small-text">• 節奏調整</text>
-  <text x="785" y="349" text-anchor="middle" class="small-text">• 風格選擇</text>
-  
-  <rect x="880" y="230" width="150" height="140" class="box"/>
-  <text x="955" y="255" text-anchor="middle" class="text" font-weight="bold">📍 Tab 4</text>
-  <text x="955" y="275" text-anchor="middle" class="small-text">地點推薦</text>
-  <text x="955" y="292" text-anchor="middle" class="small-text">器</text>
-  <text x="955" y="315" text-anchor="middle" class="small-text">• 地點搜尋</text>
-  <text x="955" y="332" text-anchor="middle" class="small-text">• 半徑設定</text>
-  <text x="955" y="349" text-anchor="middle" class="small-text">• 類型篩選</text>
+  <!-- Layer 3: Core Logic Layer -->
+  <layer id="3" name="核心邏輯層">
+    <component id="core_logic" type="backend">
+      <name>Python 核心處理模組</name>
+      <icon>🧠</icon>
+      <language>Python</language>
+      
+      <modules>
+        <module id="generate_itinerary">
+          <name>generate_itinerary()</name>
+          <description>行程生成模組</description>
+          <functions>
+            <function>整合天氣 API 資料</function>
+            <function>整合匯率 API 資料</function>
+            <function>呼叫 Gemini AI</function>
+            <function>生成 PDF</function>
+          </functions>
+          <dependencies>
+            <dependency>Weather API</dependency>
+            <dependency>Exchange API</dependency>
+            <dependency>Gemini AI</dependency>
+          </dependencies>
+        </module>
+        
+        <module id="optimize_itinerary">
+          <name>optimize_itinerary()</name>
+          <description>行程優化模組</description>
+          <functions>
+            <function>讀取上傳檔案</function>
+            <function>解析行程內容</function>
+            <function>AI 優化建議</function>
+            <function>生成 PDF</function>
+          </functions>
+          <dependencies>
+            <dependency>Gemini AI</dependency>
+          </dependencies>
+        </module>
+        
+        <module id="recommend_places">
+          <name>recommend_places()</name>
+          <description>地點推薦模組</description>
+          <functions>
+            <function>呼叫 SerpAPI</function>
+            <function>解析地點資料</function>
+            <function>AI 分析推薦</function>
+            <function>生成互動地圖</function>
+          </functions>
+          <dependencies>
+            <dependency>SerpAPI</dependency>
+            <dependency>Gemini AI</dependency>
+            <dependency>Folium</dependency>
+          </dependencies>
+        </module>
+        
+        <module id="create_pdf">
+          <name>create_pdf_with_cn()</name>
+          <description>PDF 生成模組</description>
+          <functions>
+            <function>WeasyPrint 處理</function>
+            <function>中文字體支援</function>
+            <function>HTML → PDF 轉換</function>
+            <function>排版優化</function>
+          </functions>
+          <technology>WeasyPrint</technology>
+          <fonts>Noto Sans CJK</fonts>
+        </module>
+      </modules>
+    </component>
+  </layer>
 
-  <!-- Arrows from UI to Core -->
-  <path d="M 445 370 L 445 450" class="arrow"/>
-  <path d="M 615 370 L 615 450" class="arrow"/>
-  <path d="M 785 370 L 785 450" class="arrow"/>
-  <path d="M 955 370 L 955 450" class="arrow"/>
+  <!-- Layer 4: External API Layer -->
+  <layer id="4" name="外部 API 層">
+    <component id="weather_api" type="external_api">
+      <name>Weather API</name>
+      <icon>🌤️</icon>
+      <provider>Visual Crossing</provider>
+      <features>
+        <feature>15天天氣預報</feature>
+        <feature>70年歷史資料</feature>
+      </features>
+      <quota>
+        <limit>1000</limit>
+        <period>day</period>
+      </quota>
+      <fallback>智慧降級機制</fallback>
+    </component>
+    
+    <component id="exchange_api" type="external_api">
+      <name>Exchange API</name>
+      <icon>💱</icon>
+      <provider>ExchangeRate-API</provider>
+      <features>
+        <feature>160+ 貨幣支援</feature>
+        <feature>即時匯率查詢</feature>
+      </features>
+      <quota>
+        <limit>1500</limit>
+        <period>month</period>
+      </quota>
+      <fallback>預設匯率值</fallback>
+    </component>
+    
+    <component id="gemini_ai" type="external_api">
+      <name>Gemini AI</name>
+      <icon>🤖</icon>
+      <provider>Google Gemini</provider>
+      <features>
+        <feature>智慧行程生成</feature>
+        <feature>內容優化分析</feature>
+        <feature>地點推薦分析</feature>
+      </features>
+      <quota>
+        <limit>1500</limit>
+        <period>day</period>
+      </quota>
+      <required>true</required>
+    </component>
+    
+    <component id="serpapi" type="external_api">
+      <name>SerpAPI</name>
+      <icon>🔍</icon>
+      <provider>SerpAPI</provider>
+      <service>Google Maps Search</service>
+      <features>
+        <feature>地點搜尋</feature>
+        <feature>評分資訊</feature>
+        <feature>地址與距離</feature>
+      </features>
+      <quota>
+        <limit>100</limit>
+        <period>month</period>
+      </quota>
+      <fallback>範例資料</fallback>
+    </component>
+  </layer>
 
-  <!-- Layer 3: Core Logic -->
-  <text x="50" y="485" class="subtitle">核心邏輯層</text>
-  
-  <rect x="100" y="460" width="1200" height="180" class="core-box"/>
-  <text x="700" y="485" text-anchor="middle" class="text" font-weight="bold">🧠 Python 核心處理模組</text>
-  
-  <!-- Core Functions -->
-  <rect x="130" y="500" width="240" height="120" class="box"/>
-  <text x="250" y="525" text-anchor="middle" class="text" font-weight="bold">generate_itinerary()</text>
-  <text x="250" y="548" text-anchor="middle" class="small-text">• 整合天氣 API 資料</text>
-  <text x="250" y="565" text-anchor="middle" class="small-text">• 整合匯率 API 資料</text>
-  <text x="250" y="582" text-anchor="middle" class="small-text">• 呼叫 Gemini AI</text>
-  <text x="250" y="599" text-anchor="middle" class="small-text">• 生成 PDF</text>
-  
-  <rect x="400" y="500" width="240" height="120" class="box"/>
-  <text x="520" y="525" text-anchor="middle" class="text" font-weight="bold">optimize_itinerary()</text>
-  <text x="520" y="548" text-anchor="middle" class="small-text">• 讀取上傳檔案</text>
-  <text x="520" y="565" text-anchor="middle" class="small-text">• 解析行程內容</text>
-  <text x="520" y="582" text-anchor="middle" class="small-text">• AI 優化建議</text>
-  <text x="520" y="599" text-anchor="middle" class="small-text">• 生成 PDF</text>
-  
-  <rect x="670" y="500" width="240" height="120" class="box"/>
-  <text x="790" y="525" text-anchor="middle" class="text" font-weight="bold">recommend_places()</text>
-  <text x="790" y="548" text-anchor="middle" class="small-text">• 呼叫 SerpAPI</text>
-  <text x="790" y="565" text-anchor="middle" class="small-text">• 解析地點資料</text>
-  <text x="790" y="582" text-anchor="middle" class="small-text">• AI 分析推薦</text>
-  <text x="790" y="599" text-anchor="middle" class="small-text">• 生成互動地圖</text>
-  
-  <rect x="940" y="500" width="240" height="120" class="box"/>
-  <text x="1060" y="525" text-anchor="middle" class="text" font-weight="bold">create_pdf_with_cn()</text>
-  <text x="1060" y="548" text-anchor="middle" class="small-text">• WeasyPrint 處理</text>
-  <text x="1060" y="565" text-anchor="middle" class="small-text">• 中文字體支援</text>
-  <text x="1060" y="582" text-anchor="middle" class="small-text">• HTML → PDF</text>
-  <text x="1060" y="599" text-anchor="middle" class="small-text">• 排版優化</text>
+  <!-- Layer 5: Output Layer -->
+  <layer id="5" name="輸出層">
+    <component id="pdf_output" type="output">
+      <name>PDF 文件</name>
+      <icon>📄</icon>
+      <format>PDF</format>
+      <features>
+        <feature>完整行程表</feature>
+        <feature>中文字體支援</feature>
+        <feature>可下載保存</feature>
+        <feature>專業排版</feature>
+      </features>
+      <technology>WeasyPrint</technology>
+    </component>
+    
+    <component id="table_output" type="output">
+      <name>資料表格</name>
+      <icon>📊</icon>
+      <format>Dataframe</format>
+      <features>
+        <feature>地點清單</feature>
+        <feature>評分排序</feature>
+        <feature>距離資訊</feature>
+        <feature>互動式顯示</feature>
+      </features>
+      <technology>Gradio Dataframe</technology>
+    </component>
+    
+    <component id="map_output" type="output">
+      <name>互動地圖</name>
+      <icon>🗺️</icon>
+      <format>HTML</format>
+      <features>
+        <feature>Folium 地圖整合</feature>
+        <feature>標記前三名地點</feature>
+        <feature>可縮放瀏覽</feature>
+        <feature>彈出視窗資訊</feature>
+      </features>
+      <technology>Folium</technology>
+    </component>
+  </layer>
 
-  <!-- Arrows from Core to APIs -->
-  <path d="M 250 640 L 250 700" class="data-arrow"/>
-  <path d="M 520 640 L 520 700" class="data-arrow"/>
-  <path d="M 790 640 L 790 700" class="data-arrow"/>
-  <path d="M 1060 640 L 1060 700" class="data-arrow"/>
+  <!-- Data Flow Relationships -->
+  <data_flow>
+    <connection>
+      <from>user</from>
+      <to>gradio_interface</to>
+      <type>user_input</type>
+    </connection>
+    
+    <connection>
+      <from>gradio_interface</from>
+      <to>core_logic</to>
+      <type>request</type>
+    </connection>
+    
+    <connection>
+      <from>generate_itinerary</from>
+      <to>weather_api</to>
+      <type>api_call</type>
+    </connection>
+    
+    <connection>
+      <from>generate_itinerary</from>
+      <to>exchange_api</to>
+      <type>api_call</type>
+    </connection>
+    
+    <connection>
+      <from>generate_itinerary</from>
+      <to>gemini_ai</to>
+      <type>api_call</type>
+    </connection>
+    
+    <connection>
+      <from>optimize_itinerary</from>
+      <to>gemini_ai</to>
+      <type>api_call</type>
+    </connection>
+    
+    <connection>
+      <from>recommend_places</from>
+      <to>serpapi</to>
+      <type>api_call</type>
+    </connection>
+    
+    <connection>
+      <from>recommend_places</from>
+      <to>gemini_ai</to>
+      <type>api_call</type>
+    </connection>
+    
+    <connection>
+      <from>core_logic</from>
+      <to>pdf_output</to>
+      <type>generate</type>
+    </connection>
+    
+    <connection>
+      <from>core_logic</from>
+      <to>table_output</to>
+      <type>generate</type>
+    </connection>
+    
+    <connection>
+      <from>core_logic</from>
+      <to>map_output</to>
+      <type>generate</type>
+    </connection>
+    
+    <connection>
+      <from>pdf_output</from>
+      <to>user</to>
+      <type>download</type>
+    </connection>
+    
+    <connection>
+      <from>table_output</from>
+      <to>user</to>
+      <type>display</type>
+    </connection>
+    
+    <connection>
+      <from>map_output</from>
+      <to>user</to>
+      <type>display</type>
+    </connection>
+  </data_flow>
 
-  <!-- Layer 4: External APIs -->
-  <text x="50" y="735" class="subtitle">外部 API 層</text>
-  
-  <rect x="130" y="710" width="220" height="110" class="api-box"/>
-  <text x="240" y="735" text-anchor="middle" class="text" font-weight="bold">🌤️ Weather API</text>
-  <text x="240" y="755" text-anchor="middle" class="small-text">Visual Crossing</text>
-  <text x="240" y="775" text-anchor="middle" class="small-text">• 15天天氣預報</text>
-  <text x="240" y="792" text-anchor="middle" class="small-text">• 70年歷史資料</text>
-  <text x="240" y="809" text-anchor="middle" class="small-text">配額: 1000次/天</text>
-  
-  <rect x="380" y="710" width="220" height="110" class="api-box"/>
-  <text x="490" y="735" text-anchor="middle" class="text" font-weight="bold">💱 Exchange API</text>
-  <text x="490" y="755" text-anchor="middle" class="small-text">ExchangeRate-API</text>
-  <text x="490" y="775" text-anchor="middle" class="small-text">• 160+ 貨幣</text>
-  <text x="490" y="792" text-anchor="middle" class="small-text">• 即時匯率</text>
-  <text x="490" y="809" text-anchor="middle" class="small-text">配額: 1500次/月</text>
-  
-  <rect x="630" y="710" width="220" height="110" class="api-box"/>
-  <text x="740" y="735" text-anchor="middle" class="text" font-weight="bold">🤖 Gemini AI</text>
-  <text x="740" y="755" text-anchor="middle" class="small-text">Google Gemini</text>
-  <text x="740" y="775" text-anchor="middle" class="small-text">• 行程生成</text>
-  <text x="740" y="792" text-anchor="middle" class="small-text">• 內容優化</text>
-  <text x="740" y="809" text-anchor="middle" class="small-text">配額: 1500次/天</text>
-  
-  <rect x="880" y="710" width="220" height="110" class="api-box"/>
-  <text x="990" y="735" text-anchor="middle" class="text" font-weight="bold">🔍 SerpAPI</text>
-  <text x="990" y="755" text-anchor="middle" class="small-text">Google Maps Search</text>
-  <text x="990" y="775" text-anchor="middle" class="small-text">• 地點搜尋</text>
-  <text x="990" y="792" text-anchor="middle" class="small-text">• 評分資訊</text>
-  <text x="990" y="809" text-anchor="middle" class="small-text">配額: 100次/月</text>
+  <!-- System Features -->
+  <features>
+    <feature id="1">
+      <name>智慧降級機制</name>
+      <description>API 失敗時自動使用預設值或備用方案</description>
+    </feature>
+    
+    <feature id="2">
+      <name>中文支援</name>
+      <description>完整的中文字體和編碼支援</description>
+    </feature>
+    
+    <feature id="3">
+      <name>多 API 整合</name>
+      <description>整合四個外部 API 提供豐富功能</description>
+    </feature>
+    
+    <feature id="4">
+      <name>MBTI 人格分析</name>
+      <description>基於旅遊人格類型提供個性化建議</description>
+    </feature>
+    
+    <feature id="5">
+      <name>即時資料</name>
+      <description>提供即時天氣預報和匯率資訊</description>
+    </feature>
+  </features>
 
-  <!-- Arrows from APIs to Output -->
-  <path d="M 490 820 L 490 880" class="arrow"/>
-  <path d="M 740 820 L 740 880" class="arrow"/>
-  <path d="M 990 820 L 990 880" class="arrow"/>
+  <!-- Technology Stack -->
+  <technology_stack>
+    <frontend>
+      <framework>Gradio</framework>
+      <visualization>Folium</visualization>
+    </frontend>
+    
+    <backend>
+      <language>Python 3</language>
+      <libraries>
+        <library>google-generativeai</library>
+        <library>requests</library>
+        <library>weasyprint</library>
+        <library>pandas</library>
+        <library>folium</library>
+      </libraries>
+    </backend>
+    
+    <external_services>
+      <service>Google Gemini AI</service>
+      <service>Visual Crossing Weather API</service>
+      <service>ExchangeRate API</service>
+      <service>SerpAPI</service>
+    </external_services>
+    
+    <deployment>
+      <platform>Google Colab</platform>
+      <runtime>Python Runtime</runtime>
+    </deployment>
+  </technology_stack>
 
-  <!-- Layer 5: Output -->
-  <text x="50" y="915" class="subtitle">輸出層</text>
-  
-  <rect x="300" y="890" width="220" height="90" class="output-box"/>
-  <text x="410" y="915" text-anchor="middle" class="text" font-weight="bold">📄 PDF 文件</text>
-  <text x="410" y="938" text-anchor="middle" class="small-text">• 完整行程表</text>
-  <text x="410" y="955" text-anchor="middle" class="small-text">• 中文字體支援</text>
-  <text x="410" y="972" text-anchor="middle" class="small-text">• 可下載保存</text>
-  
-  <rect x="550" y="890" width="220" height="90" class="output-box"/>
-  <text x="660" y="915" text-anchor="middle" class="text" font-weight="bold">📊 資料表格</text>
-  <text x="660" y="938" text-anchor="middle" class="small-text">• 地點清單</text>
-  <text x="660" y="955" text-anchor="middle" class="small-text">• 評分排序</text>
-  <text x="660" y="972" text-anchor="middle" class="small-text">• 距離資訊</text>
-  
-  <rect x="800" y="890" width="220" height="90" class="output-box"/>
-  <text x="910" y="915" text-anchor="middle" class="text" font-weight="bold">🗺️ 互動地圖</text>
-  <text x="910" y="938" text-anchor="middle" class="small-text">• Folium 地圖</text>
-  <text x="910" y="955" text-anchor="middle" class="small-text">• 標記前三名</text>
-  <text x="910" y="972" text-anchor="middle" class="small-text">• 可縮放瀏覽</text>
+  <!-- API Configuration -->
+  <api_configuration>
+    <api name="gemini">
+      <required>true</required>
+      <secret_key>gemini</secret_key>
+      <signup_url>https://aistudio.google.com/</signup_url>
+    </api>
+    
+    <api name="weather_api">
+      <required>false</required>
+      <secret_key>weather_api</secret_key>
+      <signup_url>https://www.visualcrossing.com/weather-api</signup_url>
+    </api>
+    
+    <api name="exchange_api">
+      <required>false</required>
+      <secret_key>exchange_api</secret_key>
+      <signup_url>https://www.exchangerate-api.com/</signup_url>
+    </api>
+    
+    <api name="serpapi">
+      <required>false</required>
+      <secret_key>serpapi</secret_key>
+      <signup_url>https://serpapi.com/</signup_url>
+    </api>
+  </api_configuration>
 
-  <!-- Legend -->
-  <rect x="1150" y="890" width="200" height="90" class="box"/>
-  <text x="1250" y="912" text-anchor="middle" class="text" font-weight="bold">圖例</text>
-  <line x1="1165" y1="930" x2="1195" y2="930" class="arrow"/>
-  <text x="1205" y="935" class="small-text">資料流向</text>
-  <line x1="1165" y1="955" x2="1195" y2="955" class="data-arrow"/>
-  <text x="1205" y="960" class="small-text">API 呼叫</text>
-</svg>
+  <!-- Core Functions Summary -->
+  <core_functions>
+    <function name="旅遊人格測驗">
+      <description>透過問卷分析使用者的旅遊偏好類型</description>
+      <input>使用者問卷回答</input>
+      <output>旅遊人格類型與建議</output>
+    </function>
+    
+    <function name="自動生成行程">
+      <description>根據目的地、日期、預算和興趣自動生成完整行程</description>
+      <input>國家、城市、日期、天數、預算、興趣、旅遊人格</input>
+      <output>詳細行程、天氣預報、匯率資訊、PDF 文件</output>
+    </function>
+    
+    <function name="行程優化">
+      <description>優化現有行程，調整節奏與風格</description>
+      <input>行程檔案、節奏選擇、風格選擇、額外需求</input>
+      <output>優化後行程、PDF 文件</output>
+    </function>
+    
+    <function name="地點推薦">
+      <description>搜尋並推薦指定地點附近的景點或餐廳</description>
+      <input>國家、城市、地標、搜尋類型、搜尋半徑</input>
+      <output>地點列表、評分資訊、AI 推薦、互動地圖</output>
+    </function>
+  </core_functions>
+
+  <!-- System Metadata -->
+  <metadata>
+    <created_by>林書妤、施樂琦、葉揚</created_by>
+    <platform>Google Colab</platform>
+    <ui_framework>Gradio</ui_framework>
+    <primary_language>Python</primary_language>
+    <supported_languages>繁體中文、English</supported_languages>
+  </metadata>
+</system_architecture>
