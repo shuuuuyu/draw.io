@@ -1,11 +1,26 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0" version="29.2.4">
   <diagram name="第 1 页" id="Pfa8zmbL0yr4TW9zRg59">
-    <mxGraphModel dx="730" dy="668" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="876" dy="802" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="CXFqfCKtod0fwrRzBmbU-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=15;" value="使用者&lt;div&gt;&lt;font style=&quot;color: rgb(102, 102, 102);&quot;&gt;分析旅遊需求、下載行程PDF、&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;color: rgb(102, 102, 102);&quot;&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;上傳行程優化、&lt;/span&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;瀏覽地圖&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="80" width="360" x="200" y="40" as="geometry" />
+        <mxCell id="L3yDE2VnUaOu5cxiVgi1-2" edge="1" parent="1" source="CXFqfCKtod0fwrRzBmbU-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="L3yDE2VnUaOu5cxiVgi1-1" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="CXFqfCKtod0fwrRzBmbU-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=15;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="使用者&lt;div&gt;&lt;font style=&quot;color: rgb(102, 102, 102);&quot;&gt;分析旅遊需求、下載行程PDF、&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;color: rgb(102, 102, 102);&quot;&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;上傳行程優化、&lt;/span&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;瀏覽地圖&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="360" x="600" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="L3yDE2VnUaOu5cxiVgi1-6" edge="1" parent="1" source="L3yDE2VnUaOu5cxiVgi1-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="L3yDE2VnUaOu5cxiVgi1-5" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="L3yDE2VnUaOu5cxiVgi1-1" parent="1" style="whiteSpace=wrap;html=1;fontSize=15;fillColor=light-dark(#F2E0F9,#392F3F);strokeColor=#9673a6;rounded=1;verticalAlign=top;" value="Gradio Web Interface" vertex="1">
+          <mxGeometry height="210" width="790" x="385" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="L3yDE2VnUaOu5cxiVgi1-3" parent="1" style="whiteSpace=wrap;html=1;fontSize=15;verticalAlign=top;rounded=1;" value="" vertex="1">
+          <mxGeometry height="60" width="120" x="440" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="L3yDE2VnUaOu5cxiVgi1-5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=15;verticalAlign=top;fillColor=#fff2cc;strokeColor=#d6b656;" value="" vertex="1">
+          <mxGeometry height="190" width="780" x="390" y="450" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
