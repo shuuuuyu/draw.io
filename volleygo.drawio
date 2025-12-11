@@ -10,7 +10,7 @@
         <mxCell id="U53N3Z6kfYfwFPWmUaqw-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;&lt;b style=&quot;&quot;&gt;頁面&lt;/b&gt;&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 24px;&quot;&gt;首頁 / 賽事 / 收藏 / AI / 影音&lt;/font&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="120" width="320" x="240" y="240" as="geometry" />
         </mxCell>
-        <mxCell id="U53N3Z6kfYfwFPWmUaqw-4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;&lt;b style=&quot;&quot;&gt;頁面&lt;/b&gt;&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 24px;&quot;&gt;首頁 / 賽事 / 收藏 / AI / 影音&lt;/font&gt;&lt;/div&gt;" vertex="1">
+        <mxCell id="U53N3Z6kfYfwFPWmUaqw-4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;font-size: 24px;&quot;&gt;&lt;b&gt;組件&lt;/b&gt;&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;font-size: 24px;&quot;&gt;天氣 / 比賽卡片&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 24px;&quot;&gt;/ 留言 /&lt;/span&gt;&lt;span style=&quot;font-size: 24px; background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;影音卡片&lt;/span&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="120" width="320" x="240" y="440" as="geometry" />
         </mxCell>
       </root>
